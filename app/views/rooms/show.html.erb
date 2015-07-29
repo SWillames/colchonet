@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+<h2>Title: <%= @room.full_name%></h2>
+
+<ul>
+	<li>Location: <%= @room.location%></li>
+	<li>Descripition: <%= @room.descripition %></li>
+</ul>
+<%= link_to 'Editar Perfil', edit_room_path(@room)%>
