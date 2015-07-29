@@ -1,4 +1,9 @@
 class RoomsController < ApplicationController
+
+	def index
+		@rooms = Room.all
+	end
+
 	def new
 		@room = Room.new
 	end
@@ -10,6 +15,10 @@ class RoomsController < ApplicationController
 		else
 			render action: :new
 		end
+	end
+
+	def show
+		@room = Room.find(params[:id])
 	end
 
 	private
