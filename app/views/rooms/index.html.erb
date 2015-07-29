@@ -1,0 +1,23 @@
+<h1>Listing Rooms</h1
+
+<table>
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Location</th>
+			<th>Description</th>
+			<th colspan="4"></th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<% @rooms.each do |room| %>
+		<tr>
+			<td><%= room.title %></td>
+			<td><%= room.location %></td>
+			<td><%= room.description %></td>
+			<td><% link_to "Show", room %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>	
