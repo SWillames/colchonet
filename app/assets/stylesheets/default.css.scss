@@ -123,20 +123,20 @@ form {
 	}
 }
 
-.fiel_with_errors {
+.field_with_errors {
 	display: inline;
 
 	label { color: $error-text-color; }
 
 	input[type=text], input[type=password], textarea {
 		border: 1px solid rgba(189,74,72, 0.5);
-		@include shadow(rgba(189,74,72, 0.5), 0px, 0px, 8px);
+		@include shadow(rgba(189,74,72, 0.2), 0px, 0px, 8px);
 
 		&:focus { border: 1px solid rgba(189,74,72, 0.6); }
 	}
 }
 
-.errors_message {
+.error_message {
 	margin-left: 5px;
 	display: inline;
 	color: $error-text-color;
