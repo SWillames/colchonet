@@ -7,4 +7,19 @@ class User < ActiveRecord::Base
 
 
 	has_secure_password
+
+	before_create do |user|
+		user.confirmation_token = SecureRandom.urlsafe_base64
+	end
+	
+	def confirm!
+		return confirmed?
+
+		self.confirmed_at = Time.current
+		self.confirmation_token = ''		
+	end
+
+	def confirmed?
+		confirmed_at.present?
+	end
 end

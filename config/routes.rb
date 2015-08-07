@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   end
 
    get ':locale' => 'home#index', locale: LOCALES
+   get 'confirmation' => 'confirmations#show', locale: LOCALES
    root 'home#index'
 end
