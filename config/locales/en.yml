@@ -34,7 +34,10 @@ en:
                 people from around the world.
             confirm_link_html: 'For you start using the site , visit the link : %{link}'
             thanks_html: 'Thank you for registering on %{link}.'
-   confirmations: Email successfully confirmed Thanks.
+   confirmations: 
+      success: Email successfully confirmed Thanks.
    home:
      index:
         title: Recently posted Rooms
+   notice:
+      title: 'Signup held Successfully!'

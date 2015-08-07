@@ -58,3 +58,5 @@ pt-BR:
    home:
      index:
       title: Quartos recém postados.
+   notice:
+      title: 'Cadastro realizado com sucesso!'
