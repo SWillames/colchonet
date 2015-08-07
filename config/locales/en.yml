@@ -1,35 +1,36 @@
 en:
-  users:
-    new:
-      title: Title
-    edit:
-      title: Edit Profile
-    show:
-      title: "Profile: %{user_name}"
-      edit: 'Edit Profile'
-      location: "Location: %{location}"
-      bio: "Bio %{bio}"
-  rooms:
-    new:
-      title: New Room
-  links:
+   users:
+     new:
+       title: Title
+     edit:
+       title: Edit Profile
+     show:
+       title: "Profile: %{user_name}"
+       edit: 'Edit Profile'
+       location: "Location: %{location}"
+       bio: "Bio %{bio}"
+   rooms:
+     new:
+       title: New Room
+
+   links:
     back: back
 
-  signup:
-    confirm_email:
-      subject: 'Colcho.net - Email of confirmation'
-      title: 'Welcome to Colcho.net'
-      body: |
-         Welcome to Colcho.net, %{full_name}.
-         The Colcho.bet is ideal place for you to rent
-         that room left at hishome and also meet 
-         people from around the world.
-      confirm_link_html: 'For you start using the site , visit the link : %{link}'
-      thanks_html: 'Thank you for registering on %{link}.
-
-  layout:
+   layout:
     rooms: Rooms
     signup: Signup
 
-  general:
+   general:
     formerror: 'Exist errors in form. Please you need see.'
+
+   signup:
+     confirm_email:
+            subject: 'Colcho.net - check your email'
+            title: 'Welcome to Colcho.net'
+            body: |
+                Welcome to Colcho.net, %{full_name}.
+                The Colcho.bet is ideal place for you to rent
+                that room left at hishome and also meet 
+                people from around the world.
+            confirm_link_html: 'For you start using the site , visit the link : %{link}'
+            thanks_html: 'Thank you for registering on %{link}.'

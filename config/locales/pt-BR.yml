@@ -12,7 +12,7 @@ pt-BR:
         Bio: 
         %{bio}
    rooms:
-    new:
+     new:
        title: Novo Cadastro
 
 
