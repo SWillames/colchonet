@@ -15,9 +15,21 @@ en:
   links:
     back: back
 
+  signup:
+    confirm_email:
+      subject: 'Colcho.net - Email of confirmation'
+      title: 'Welcome to Colcho.net'
+      body: |
+         Welcome to Colcho.net, %{full_name}.
+         The Colcho.bet is ideal place for you to rent
+         that room left at hishome and also meet 
+         people from around the world.
+      confirm_link_html: 'For you start using the site , visit the link : %{link}'
+      thanks_html: 'Thank you for registering on %{link}.
+
   layout:
     rooms: Rooms
     signup: Signup
 
-  eneral:
-    formerror: 'Há erros no formulário, por favor verifique.'  
+  general:
+    formerror: 'Exist errors in form. Please you need see.'
