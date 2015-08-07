@@ -52,4 +52,9 @@ pt-BR:
         room:
          description: Descrição
          location: Localização
-         title: Titulo 
+         title: Titulo
+   confirmations:
+       success: 'Email confirmado com sucesso, Obrigado'
+   home:
+     index:
+      title: Quartos recém postados.
