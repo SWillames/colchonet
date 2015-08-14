@@ -23,6 +23,11 @@ en:
    general:
     formerror: 'Exist errors in form. Please you need see.'
 
+   user_sessions:
+    new:
+     title: 'Login'
+     sign_up: 'Signup'
+
    signup:
      confirm_email:
             subject: 'Colcho.net - check your email'
@@ -41,3 +46,6 @@ en:
         title: Recently posted Rooms
    notice:
       title: 'Signup held Successfully!'
+   errors:
+    messages:
+      invalid_login: 'User or password invalids!'

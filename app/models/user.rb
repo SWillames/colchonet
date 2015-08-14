@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
 	validates_length_of :bio, minimum: 20, allow_blank: false
 	validates_format_of :email, with: EMAIL_REGEXP
 
+	scope :confirmed, -> {where.not(confirmed_at: nil)}
+
 
 	has_secure_password
 
@@ -16,10 +18,15 @@ class User < ActiveRecord::Base
 		return confirmed?
 
 		self.confirmed_at = Time.current
-		self.confirmation_token = ''		
+		self.confirmation_token = ''
+		save!		
 	end
 
 	def confirmed?
 		confirmed_at.present?
+	end
+
+	def self.authenticate(email, password)
+		user = confirmed.find_by(email: email).try(:authenticate, password)
 	end
 end
